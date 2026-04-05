@@ -30,12 +30,18 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
         </dependency>
+        <!-- Align with Jackson ${jackson.version}; Dropwizard 2.1.x brings older jackson-dataformat-yaml + SnakeYAML 1.x, which breaks when SnakeYAML 2.x wins on the classpath -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
 
-        <!-- Swagger (annotations) for io.swagger.annotations.Api / ApiOperation -->
+        <!-- Align with api-server swagger-jaxrs 1.6.x / swagger-core -->
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.5.22</version>
+            <version>1.6.14</version>
         </dependency>
 
         <dependency>

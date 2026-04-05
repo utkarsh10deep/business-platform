@@ -20,6 +20,8 @@
         <junit.version>5.9.2</junit.version>
         <mockito.version>5.14.2</mockito.version>
         <jackson.version>2.19.2</jackson.version>
+        <!-- Align with jackson-dataformat-yaml ${jackson.version} (bundles SnakeYAML 2.4) -->
+        <snakeyaml.version>2.4</snakeyaml.version>
         <log4j2.version>2.25.3</log4j2.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
@@ -47,6 +49,11 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>

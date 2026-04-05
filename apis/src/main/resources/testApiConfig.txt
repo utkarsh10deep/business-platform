@@ -7,12 +7,12 @@ swagger:
 server:
     #   type: simple
     # applicationContextPath: /application
-    applicationConnectors
+    applicationConnectors:
         - type: http
-          port: 8080
-    adminConnectors
+          port: 8083
+    adminConnectors:
         - type: http
-          port: 8081
+          port: 8084
     #   adminContextPath: /admin
     requestLog:
         type: external
