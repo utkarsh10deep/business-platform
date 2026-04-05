@@ -1,3 +1,3 @@
 #README
 
-This reporistory will have core modules needed for all business modules.
+This reporistory will have core modules to launch WMS services.
